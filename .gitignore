@@ -1,3 +1,4 @@
 # Files generated during the build process
 build/
 *.sublime-*
+third_party/
