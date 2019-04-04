@@ -183,6 +183,7 @@ vsaq_build_prod() {
  vsaq_build
  rm -f "$BUILD_DIR/example.html"
  rm -f "$BUILD_DIR/all_tests.html"
+ rm -f "$BUILD_DIR/vsaq_editor.html"
 }
 
 vsaq_build_clean() {
