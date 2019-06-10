@@ -77,7 +77,7 @@
             },
             {
               "type": "checkgroup",
-              "cond": "office_facilities_excl_no",
+              "cond": "!office_facilities_home",
               "text": "Select the security controls that are in place at <i>all</i> of your offices:",
               "defaultChoice": false,
               "choices": [
