@@ -78,6 +78,29 @@
             },
             {
               "type": "block",
+              "text": "Ports and Protocols",
+              "id": "block_ports_and_protocols",
+              "items": [
+                {
+                  "type": "radiogroup",
+                  "text": "Does your application only require HTTPS over tcp/443, including APIs and other features?", 
+                  "defaultChoice": false,
+                  "id": "application_ports_and_protocols",
+                  "choices": [
+                    {"application_ports_and_protocols_yes": "Yes, our application only uses HTTPS over tcp/443. This includes all functionaility such as UI, APIs, agents, etc."},
+                    {"application_ports_and_protocols_no": "No, our application requires other ports and/or protocols for certain features."}
+                  ]
+                },
+                {
+                  "type": "box",
+                  "text": "Describe the other ports and protocols required by your application and the feature that requires it. For example UI: https/tcp/443, REST API: https/tcp/443, Agent: tcp/6767, etc.",
+                  "id": "application_ports_and_protocols_no_explanation",
+                  "cond": "application_ports_and_protocols_no"
+                }
+              ]
+            },
+            {
+              "type": "block",
               "text": "HTTPS and Mixed-Content Risks",
               "id": "block_https",
               "items": [
