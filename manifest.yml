@@ -1,0 +1,5 @@
+applications:
+- name: vsaq
+  buildpacks:
+  - https://github.com/cloudfoundry/staticfile-buildpack
+  stack: cflinuxfs3
